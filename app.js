@@ -131,36 +131,7 @@ app.get("/:listName", function(req, res){
 
 
 
-app.post("/work", function(req, res){
-  var item = req.body.newItems
-  workList.push(item);
-  res.redirect("/work");
-})
-app.get("/me", function(req, res){
-  res.render("me")
-});
 
-app.get("/new", function(req, res){
-  res.render("new", {TodayOf: "Practice", next: news})
-})
-app.post("/new", function(req, res){
-  var ne = req.body.newItems
-  news.push(ne);
-  res.redirect("/new")
-})
-
-app.get("/all", function(req,res){
-  res.render("all", {TodayOf: "Practice", next: news, Second: "Work List", ext: workList})
-})
-
-app.post("/all", function(req, res){
-  var sop = req.body.newItem
-  news.push(sop);
-  var op = req.body.newItems
-  workList.push(op);
-  res.redirect("/all");
-})
-
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
   console.log("Server is running on port 3000")
 });
