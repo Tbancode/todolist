@@ -10,7 +10,6 @@
   "routes":[
     {
       "src": "/(.*)",
-      "drest": "/app.js"
     }
   ]
 }
