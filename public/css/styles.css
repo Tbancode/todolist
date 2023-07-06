@@ -28,7 +28,7 @@ h1 {
   text-align: center;
 }
 #heading {
-  background-color: pink ;
+  background-color: #A683E3 ;
   text-align: center;
 }
 
@@ -70,7 +70,7 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: pink;
+  background-color: #A683E3;
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
